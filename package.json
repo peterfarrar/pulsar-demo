@@ -1,0 +1,19 @@
+{
+  "name": "pulsar-messaging-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "producer": ". ./config/local.sh && node ./src/producer.js",
+    "shared": ". ./config/local.sh && node ./src/shared_consumer.js",
+    "exclusive": ". ./config/local.sh && node ./src/exclusive_consumer.js",
+    "exclusive2": ". ./config/local.sh && node ./src/exclusive2_consumer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pulsar-client": "^1.4.1"
+  }
+}
