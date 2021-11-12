@@ -25,7 +25,7 @@ bin/pulsar standalone
 brew install libpulsar
 ```
 
-### Install pulsar library on Linux (If I remember correctly)
+### Install pulsar library on Ubuntu Linux
 ```
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
