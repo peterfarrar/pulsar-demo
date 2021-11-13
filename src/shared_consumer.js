@@ -10,9 +10,12 @@ const thisPulsarFunction = async () => {
     topic: options.topic,
     subscription: options.sharedSubscription,
     subscriptionType: 'Shared',
-    listener: (msg, consumer) => {
+    listener: async (msg, consumer) => {
       console.log(msg.getData().toString())
       consumer.acknowledge(msg)
+      // adding this delay didn't cause better distribution
+      // const waitTill = new Date(new Date().getTime() + 1000);
+      // while(waitTill > new Date()){}
     }
   })
 
